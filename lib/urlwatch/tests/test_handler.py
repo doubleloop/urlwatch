@@ -90,7 +90,7 @@ def test_pep8_conformance():
 class ConfigForTest(BaseConfig):
     def __init__(self, config, urls, cache, hooks, verbose):
         (prefix, bindir) = os.path.split(os.path.dirname(os.path.abspath(sys.argv[0])))
-        super().__init__('urlwatch', os.path.dirname(__file__), config, urls, cache, hooks, verbose)
+        super().__init__('urlwatch', os.path.dirname(__file__), os.path.dirname(__file__), config, urls, cache, hooks, verbose)
         self.edit = False
         self.edit_hooks = False
 

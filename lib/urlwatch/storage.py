@@ -147,7 +147,7 @@ DEFAULT_CONFIG = {
         'matrix': {
             'enabled': False,
             'homeserver': '',
-            'access_token': '',
+            'user': '',
             'room_id': '',
         },
         'mailgun': {
